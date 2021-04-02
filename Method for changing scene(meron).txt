@@ -1,0 +1,13 @@
+ public void tableButtonPressed(ActionEvent event) throws IOException{
+        Parent tableParent = FXMLLoader.load(getClass().getResource("Assessment.fxml"));
+        Scene tableView = new Scene(tableParent);
+        
+        //stage information
+        Stage newWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
+        
+        newWindow.setScene(tableView);
+        newWindow.setTitle("Edmonton Property assessment");
+        newWindow.show();
+    }
+
+//Make sure to change the filename and window title accordingly
